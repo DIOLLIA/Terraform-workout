@@ -17,9 +17,10 @@ paste the content of the terra_on_docker\psh_aliasses.txt file to it. Restart ps
 
 ### <a name="choco_install">Installing choco and terraform</a>  
 
-Go to the path and paste there file with aliases
-install choco
+
+
 From the [Choco docs](https://docs.chocolatey.org/en-us/choco/setup/)
+
 Run `Get-ExecutionPolicy`.
 
 If it returns Restricted, then run `Set-ExecutionPolicy AllSigned` or `Set-ExecutionPolicy Bypass -Scope Process`.
@@ -46,7 +47,7 @@ This working directory houses the configuration files that you write to describe
 Look at https://github.com/kreuzwerker/terraform-provider-docker 
 and use example from readme to create main.tf file inside the directory
 
-Use `terraform init` (`tfi` with applied aliases) to Initialize the project, which downloads a plugin called a provider that lets Terraform interact with Docker. It will create also .terraform dir.
+Use `terraform init` (`tfi` with applied aliases) to Initialize the project, which downloads a plugin called a provider that lets Terraform interact with Docker. It will create also .terraform directory with its files.
 
 Then you can run `tfa` to make terraform create docker container with nginx
 
@@ -56,4 +57,4 @@ go to localhost:8000 and check that server runs
 
 perform `tfd` to destroy container.
 
-![alt text](1_terra_on_docker\image.png)
+![alt text](1_terra_on_docker/image.png)

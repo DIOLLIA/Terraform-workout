@@ -1,0 +1,22 @@
+#Terraform aliases
+# To apply the files command execution could be required
+# Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+Set-Alias tf terraform
+
+function tfv {
+    tf -version
+}
+
+function tfi {
+    tf init
+}
+
+function tfa {
+    tf apply
+}
+
+function tfd {
+    tf destroy
+}

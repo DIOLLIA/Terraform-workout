@@ -11,7 +11,7 @@ terraform {
 
 # Configure the docker provider
 provider "docker" {
-  host    = "npipe:////.//pipe//docker_engine"
+  host = "npipe:////.//pipe//docker_engine"
 }
 
 # Create a docker image resource, eq to 'docker pull nginx:latest'
